@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore")
 
 @st.cache_data
 def ee_authenticate():
-    geemap.ee_initialize(authorization_code='4/1ASVgi3IoGd3RFwOHNNgOTl9vtwWqGds6iQlN-wbiOLDdx4XL1uDDNzKYp2U')
+    geemap.ee_initialize(authorization_code="4/1ASVgi3IoGd3RFwOHNNgOTl9vtwWqGds6iQlN-wbiOLDdx4XL1uDDNzKYp2U")
 
 
 st.sidebar.info(
