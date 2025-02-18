@@ -17,7 +17,7 @@ warnings.filterwarnings("ignore")
 
 
 @st.cache_data
-def ee_authenticate(token_name="EARTHENGINE_TOKEN"):
+def ee_authenticate():
     geemap.ee_initialize(authorization_code='4/1ASVgi3IoGd3RFwOHNNgOTl9vtwWqGds6iQlN-wbiOLDdx4XL1uDDNzKYp2U')
 
 
@@ -252,7 +252,7 @@ def app():
     st.session_state["vis_params"] = None
 
     with row1_col1:
-        ee_authenticate(authorization_code="4/1ASVgi3IoGd3RFwOHNNgOTl9vtwWqGds6iQlN-wbiOLDdx4XL1uDDNzKYp2U")
+        ee_authenticate()
         m = geemap.Map(
             basemap="HYBRID",
             plugin_Draw=True,
