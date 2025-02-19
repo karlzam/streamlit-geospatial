@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore")
 
 @st.cache_data
 def ee_authenticate(token_name="EARTHENGINE_TOKEN"):
-    geemap.ee_initialize(token_name=token_name, auth_mode='appdefault')
+    geemap.ee_initialize(token_name=token_name, credentials="persistent", auth_quiet=True)
 
 
 st.sidebar.info(
